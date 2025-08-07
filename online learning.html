@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Learn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tech Learn</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+  <script src="script2.js"></script>
+  <main>
+    <section id="courses">
+      <h2>Available Courses</h2>
+      <div class="course-card" onclick="startCourse('HTML Basics', 'https://www.youtube.com/embed/G3e-cpL7ofc')">
+        <h3>HTML Basics</h3>
+        <p>Introduction to HTML</p>
+      </div>
+      <div class="course-card" onclick="startCourse('CSS Fundamentals', 'https://www.youtube.com/embed/yfoY53QXEnI')">
+        <h3>CSS Fundamentals</h3>
+        <p>Learn how to style web pages</p>
+      </div>
+      <div class="course-card" onclick="startCourse('JavaScript Intro', 'https://www.youtube.com/embed/W6NZfCO5SIk')">
+        <h3>JavaScript Intro</h3>
+        <p>Start coding with JavaScript</p>
+      </div>
+    </section>
+
+    <section id="player" style="display:none">
+      <h2 id="courseTitle"></h2>
+      <iframe id="videoFrame" width="100%" height="400"
+        src="" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      <button onclick="completeLesson()">Mark Complete</button>
+
+      
+      <!-- Quiz Section -->
+<!-- Quiz Section (HTML, CSS, JS) -->
+<div id="quizSection" style="margin-top:20px">
+
+  <!-- HTML Quiz -->
+  <div id="quiz-html" class="quiz-block">
+    <h3>HTML Quiz</h3>
+    <p>1. What does HTML stand for?</p>
+    <ul>
+      <li onclick="checkAnswer(this, false)">Hyper Text Markdown Language</li>
+      <li onclick="checkAnswer(this, true)">Hyper Text Markup Language</li>
+      <li onclick="checkAnswer(this, false)">HighText Machine Language</li>
+    </ul>
+
+   <p>2. Which tag is used for inserting a line break in HTML?</p>
+    <ul>
+      <li onclick="checkAnswer(this, true, 1)">&lt;br&gt;</li>
+      <li onclick="checkAnswer(this, false, 1)">&lt;break&gt;</li>
+      <li onclick="checkAnswer(this, false, 1)">&lt;lb&gt;</li>
+    </ul>
+
+    <p>3. Which CSS property controls the text size?</p>
+    <ul>
+      <li onclick="checkAnswer(this, false, 2)">font-style</li>
+      <li onclick="checkAnswer(this, true, 2)">font-size</li>
+      <li onclick="checkAnswer(this, false, 2)">text-style</li>
+    </ul>
+  </div>
+
+  <!-- CSS Quiz -->
+  <div id="quiz-css" class="quiz-block" style="display:none">
+    <h3>CSS Quiz</h3>
+
+    <p>1. What does CSS stand for?</p>
+    <ul>
+      <li onclick="checkAnswer(this, false)">Computer Style Sheets</li>
+      <li onclick="checkAnswer(this, false)">Creative Style Sheets</li>
+      <li onclick="checkAnswer(this, true)">Cascading Style Sheets</li>
+      <li onclick="checkAnswer(this, false)">Colorful Style Sheets</li>
+    </ul>
+
+    <p>2. Which property is used to change the background color?</p>
+    <ul>
+      <li onclick="checkAnswer(this, false)">color</li>
+      <li onclick="checkAnswer(this, false)">font-color</li>
+      <li onclick="checkAnswer(this, true)">background-color</li>
+      <li onclick="checkAnswer(this, false)">bgcolor</li>
+    </ul>
+
+    <p>3. How do you make text bold in CSS?</p>
+    <ul>
+      <li onclick="checkAnswer(this, false)">font-bold: true;</li>
+      <li onclick="checkAnswer(this, true)">font-weight: bold;</li>
+      <li onclick="checkAnswer(this, false)">text-style: bold;</li>
+      <li onclick="checkAnswer(this, false)">weight: bold;</li>
+    </ul>
+  </div>
+
+  <!-- JavaScript Quiz -->
+  <div id="quiz-js" class="quiz-block" style="display:none">
+    <h3>JavaScript Quiz</h3>
+
+    <p>1. Which keyword is used to declare a variable in JavaScript?</p>
+    <ul>
+      <li onclick="checkAnswer(this, false)">int</li>
+      <li onclick="checkAnswer(this, true)">let</li>
+      <li onclick="checkAnswer(this, false)">varname</li>
+    </ul>
+
+    <p>2. What is the output of: console.log(typeof [])?</p>
+    <ul>
+      <li onclick="checkAnswer(this, false)">object[]</li>
+      <li onclick="checkAnswer(this, true)">object</li>
+      <li onclick="checkAnswer(this, false)">array</li>
+    </ul>
+
+    <p>3. What does DOM stand for?</p>
+    <ul>
+      <li onclick="checkAnswer(this, true)">Document Object Model</li>
+      <li onclick="checkAnswer(this, false)">Data Object Management</li>
+      <li onclick="checkAnswer(this, false)">Digital Order Machine</li>
+    </ul>
+  </div>
+</div>
+
+
+
+    </section>
+
+    <section id="progress">
+      <h2>Your Progress</h2>
+      <ul id="progressList"></ul>
+    </section>
+
+    
+
+
+    <section id="certificate" style="display: none">
+      <h2>Certificate</h2>
+      <p>Congratulations! You completed your course during the CodTech Internship.</p>
+      <button onclick="downloadCertificate()">Download Certificate</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Tech Learning Platform</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
+

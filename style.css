@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+}
+
+header {
+  background-color: #1a73e8;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+.course-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.03);
+  background-color: #e3f2fd;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0c59d1;
+}
+
+#quizSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+#quizSection li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#quizSection li:hover {
+  background-color: #f1f1f1;
+}
+
+.correct {
+  background-color: #c8e6c9 !important;
+}
+
+.incorrect {
+  background-color: #ffcdd2 !important;
+}
+
+footer {
+  background-color: #1a73e8;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.question-block {
+  margin-bottom: 30px;
+  background: #fefefe;
+  padding: 1rem;
+  border-left: 4px solid #1a73e8;
+  border-radius: 8px;
+}
+
+.question-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.question-block li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.question-block li:hover {
+  background-color: #f1f1f1;
+}
+
+.correct {
+  background-color: #c8e6c9 !important;
+}
+
+.incorrect {
+  background-color: #ffcdd2 !important;
+}
+.correct {
+  background-color: #c8f7c5;
+  color: #155724;
+}
+
+.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.quiz-block ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-block li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
